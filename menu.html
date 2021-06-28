@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <title>Menu</title>
+</head>
+
+<body>
+    <!-- Menu -->
+    <div id="menu">
+        <div class="menuRow">
+            <h1>Menu</h1>
+            <div>
+                <button type="button" class="btn-sm btn btn-warning viewCart position-relative">
+                    Shopping Cart
+                    <span id="badge"
+                        class="visually-hidden position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                        <span id="badgeCount" class="visually-hidden">0</span>
+                    </span>
+                </button>
+            </div>
+        </div>
+        <div class="menuRow">
+            <div>ID</div>
+            <div>Description</div>
+            <div>Price</div>
+            <div>Quantity</div>
+        </div>
+        <div class="menuRow">
+            <div>1</div>
+            <div>Coke</div>
+            <div>12.50</div>
+            <div><input id="qtyValue1" type="number" min="1" value="1"></div>
+            <div><button id="add1" class="add btn btn-sm btn-plain">Add To Cart</button></div>
+        </div>
+        <div class="menuRow">
+            <div>2</div>
+            <div>Sparkling Water</div>
+            <div>10.00</div>
+            <div><input id="qtyValue2" type="number" min="1" value="1"></div>
+            <div><button id="add2" class="add btn btn-sm btn-plain">Add To Cart</button></div>
+        </div>
+        <div class="menuRow">
+            <div>3</div>
+            <div>Switch Energy</div>
+            <div>12.00</div>
+            <div><input id="qtyValue3" type="number" min="1" value="1"></div>
+            <div><button id="add3" class="add btn btn-sm btn-plain">Add To Cart</button></div>
+        </div>
+        <div class="menuRow">
+            <div>4</div>
+            <div>Orange Juice</div>
+            <div>15.00</div>
+            <div><input id="qtyValue4" type="number" min="1" value="1"></div>
+            <div><button id="add4" class="add btn btn-sm btn-plain">Add To Cart</button></div>
+        </div>
+
+        <!-- Shopping Cart -->
+        <div id="shoppingCart">
+            <div class="cartContent">
+                <div class="cartRow">
+                    <h1>Shopping Cart</h1>
+                    <div>
+                        <button class="closeCart btn btn-sm btn-plain">Close</button>
+                    </div>
+                </div>
+                <div class="cartRow">
+                    <div>ID</div>
+                    <div>Description</div>
+                    <div>Price</div>
+                    <div>Quantity</div>
+                    <div>Total Price</div>
+                    <div></div>
+                </div>
+                <div id="cartContent"></div>
+                <div class="cartRow">
+                    <h4>TOTAL</h4>
+                    <div id="cartTotal"></div>
+                    <div class="checkout"><button type="button" id="checkout" class="btn btn-sm btn-success">
+                            Checkout
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Script  -->
+        <script src="app.js"></script>
+</body>
+
+</html>
